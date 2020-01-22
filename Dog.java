@@ -5,7 +5,7 @@ public class Dog{
 	private String name;
 	private boolean happy;
 
-	public Dog(name){
+	public Dog(String name){
 		this.name = name;
 		this.fed = false;
 		this.walked = false;
