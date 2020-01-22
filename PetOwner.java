@@ -22,8 +22,12 @@ public class PetOwner{
 	public walkDog(){
 		this.dog.walk();
 	}
-
-//feed dog
+	public feedDog(){
+		this.dog.fed();
+	}
+	public feedCat(){
+		this.cat.fed();
+	}
 
 	public boolean getHappyness(){
 		if (this.cat.getHappyness() && this.dog.getHappyness()){
