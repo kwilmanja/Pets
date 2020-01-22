@@ -1,36 +1,15 @@
 public class PetOwner{
 	private String name;
-	private Dog dog;
-	private Cat cat;
+	private Pet[] pets;
 	private boolean happy;
 	
-	public PetOwner(String name, String dogName, String catName){
+	public PetOwner(String name, Pets[] pets){
 		this.name = name;
-		this.dog = new Dog(dogName);
-		this.cat = new Cat(catName);
-	}
-
-	public void petCat(){
-		this.cat.pet();
-	}
-	public void petDog(){
-		this.dog.pet();
-	}
-	public void walkCat(){
-		this.cat.walk();
-	}
-	public void walkDog(){
-		this.dog.walk();
-	}
-	public void feedDog(){
-		this.dog.feed();
-	}
-	public void feedCat(){
-		this.cat.feed();
+		this.pets = pets;
 	}
 
 	public boolean getHappyness(){
-		if (this.cat.getHappyness() && this.dog.getHappyness()){
+		if (){
 			this.happy = true;
 		}
 		else{
