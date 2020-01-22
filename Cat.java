@@ -1,45 +1,28 @@
-public class Cat{
-	private boolean fed;
-	private boolean walked;
-	private boolean petted;
-	private String name;
-	private boolean happy;
+public class Cat extends Pet{
+	
 
 	public Cat(String name){
-		this.name = name;
-		this.fed = false;
-		this.walked = false;
-		this.petted = false;
+		super(name);
 	}
 
-	public void walk(){
-		this.walked = true;
-	}
-	public void feed(){
-		this.fed = true;
-	}
-	public void pet(){
-		this.petted = true;
-	}
+
 
 	public boolean getHappyness(){
-		if (!this.walked && this.fed && !this.petted){
-			this.happy = true;
+		if (!this.hasBeenWalked() && this.hasBeenFed() && !this.hasBeenPetted()){
+			makeHappy();
 		}
 		else{
-			this.happy = false;
+			makeUnhappy();
 		}
-		return this.happy;
+		return isHappy();
 	}
 
-	public String meow(){
-		if (!this.walked && this.fed && !this.petted){
-			this.happy = true;
-			return "MEOW!";
+	public String talk(){
+		if (getHappyness()){
+			return "MEOW";
 		}
 		else{
-			this.happy = false;
-			return "hiss";
+			return "HISS";
 		}
 	}
 }
