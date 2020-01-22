@@ -10,23 +10,23 @@ public class PetOwner{
 		this.cat = cat;
 	}
 
-	public petCat(){
+	public void petCat(){
 		this.cat.pet();
 	}
-	public petDog(){
+	public void petDog(){
 		this.dog.pet();
 	}
-	public walkCat(){
+	public void walkCat(){
 		this.cat.walk();
 	}
-	public walkDog(){
+	public void walkDog(){
 		this.dog.walk();
 	}
-	public feedDog(){
-		this.dog.fed();
+	public void feedDog(){
+		this.dog.feed();
 	}
-	public feedCat(){
-		this.cat.fed();
+	public void feedCat(){
+		this.cat.feed();
 	}
 
 	public boolean getHappyness(){

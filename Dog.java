@@ -12,17 +12,17 @@ public class Dog{
 		this.petted = false;
 	}
 
-	public walk(){
+	public void walk(){
 		this.walked = true;
 	}
-	public feed(){
+	public void feed(){
 		this.fed = true;
 	}
-	public pet(){
+	public void pet(){
 		this.petted = true;
 	}
 
-	public getHappyness(){
+	public boolean getHappyness(){
 		if (this.walked && this.fed && this.petted){
 			this.happy = true;
 		}
@@ -39,7 +39,7 @@ public class Dog{
 		}
 		else{
 			this.happy = false;
-			return "woof"
+			return "woof";
 		}
 	}
 }
