@@ -4,10 +4,10 @@ public class PetOwner{
 	private Cat cat;
 	private boolean happy;
 	
-	public PetOwner(String name, Dog dog, Cat cat){
+	public PetOwner(String name, String dogName, String catName){
 		this.name = name;
-		this.dog = dog;
-		this.cat = cat;
+		this.dog = new Dog(dogName);
+		this.cat = new Cat(catName);
 	}
 
 	public void petCat(){
