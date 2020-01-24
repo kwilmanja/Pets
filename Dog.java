@@ -8,18 +8,17 @@ public class Dog extends Pet{
 
 
 
-	public boolean getHappyness(){
+	public boolean isHappy(){
 		if (this.hasBeenWalked() && this.hasBeenFed() && this.hasBeenPetted()){
-			makeHappy();
+			return true;
 		}
 		else{
-			makeUnhappy();
+			return false;
 		}
-		return isHappy();
 	}
 
 	public String talk(){
-		if (getHappyness()){
+		if (isHappy()){
 			return "WOOF!";
 		}
 		else{
