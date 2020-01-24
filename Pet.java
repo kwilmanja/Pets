@@ -2,7 +2,10 @@ public class Pet{
     private String name;
     private boolean fed;
 	private boolean walked;
-	private boolean petted;
+    private boolean petted;
+    private boolean brushed;
+    private boolean ridden;
+
     
     public Pet(String name){
         this.name = name;
@@ -15,7 +18,13 @@ public class Pet{
 	}
 	public void pet(){
 		this.petted = true;
-	}
+    }
+    public void ride(){
+        this.ridden = true;
+    }
+    public void brush(){
+        this.brushed = true;
+    }
 
 	public boolean hasBeenPetted(){
         return petted;
@@ -26,12 +35,19 @@ public class Pet{
     public boolean hasBeenFed(){
         return fed;
     }
-
+    public boolean hasBeenRidden(){
+        return ridden;
+    }
+    public boolean hasBeenBrushed(){
+        return brushed;
+    }
+    
     public boolean isHappy(){
     	return true;
     }
     public String talk(){
     	return "";
     }
+   
 
 }
