@@ -1,4 +1,5 @@
 public class Horse extends Pet{
+    
 
     public Horse(String name){
         super(name);
@@ -11,5 +12,17 @@ public class Horse extends Pet{
         } else{
             return false;
         }
+    }
+    public void ride(){
+        this.ridden = true;
+    }
+    public void brush(){
+        this.brushed = true;
+    }
+    public boolean hasBeenRidden(){
+        return ridden;
+    }
+    public boolean hasBeenBrushed(){
+        return brushed;
     }
 }

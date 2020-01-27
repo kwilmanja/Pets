@@ -35,6 +35,8 @@ public class PetOwner{
 	public void ridePet(int x){
 		pets[x].ride();
 	}
+	
+	
 	public boolean getPetHappyness(int x){
 		return pets[x].isHappy();
 	}
