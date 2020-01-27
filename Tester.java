@@ -2,8 +2,8 @@ public class Tester{
 	public static void main(String[] args){
 
 		Pet[] pets = new Pet[2];
-		Dog billy = new Dog("billy");
-		Horse john = new Horse("john");
+		Yorkie billy = new Yorkie("billy");
+		TalkingCat john = new TalkingCat("john");
 		pets[0] = billy;
 		pets[1] = john;
 
@@ -11,24 +11,22 @@ public class Tester{
 
 		System.out.println(fred.getHappyness());
 		System.out.println(fred.getPetHappyness(0));
-		fred.petPet(0);
+		for(int i = 0; i<10; i++){
+			fred.petPet(0);
+		}
 		fred.walkPet(0);
 		fred.feedPet(0);
 		System.out.println(fred.getPetHappyness(0));
 		System.out.println(fred.getHappyness());
 		System.out.println(fred.talk(0));
 
-		
+		System.out.println(fred.getPetHappyness(1));
+		System.out.println(fred.talk(1));
+		fred.feedPet(1);
+		System.out.println(fred.getPetHappyness(1));
+		System.out.println(fred.talk(1));
+		System.out.println(fred.getHappyness());
 
-		
 
-		// fred.feedCat();
-		// fred.feedDog();
-		// fred.walkDog();
-		// fred.petDog();
-
-		// System.out.println(fred.dogBark());
-		// System.out.println(fred.catMeow());
-		// System.out.println(fred.getHappyness());
 	}
 }

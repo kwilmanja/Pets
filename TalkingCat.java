@@ -1,7 +1,7 @@
 import java.util.Random;
 public class TalkingCat extends Pet{
 
-	public Cat(String name){
+	public TalkingCat(String name){
 		super(name);
 	}
 
@@ -20,21 +20,18 @@ public class TalkingCat extends Pet{
 		Random rand = new Random();
 		if (isHappy()){
 			int i = rand.nextInt(2);
-			switch(x){
-				case 1: return "You're looking cute today!";
-						break;
-				case 2: return "You're awesome!";
-						break;
+			switch(i){
+				case 0: return "You're looking cute today!";
+				case 1: return "You're awesome!";
 			}
 		}
 		else{
 			int i = rand.nextInt(2);
-			switch(x){
-				case 1: return "You're stupid!";
-						break;
-				case 2: return "I hate you!";
-						break;
+			switch(i){
+				case 0: return "You're stupid!";
+				case 1: return "I hate you!";
 			}
 		}
+		return "f";
 	}
 }

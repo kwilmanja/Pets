@@ -1,4 +1,4 @@
-public class Yorkie extends Pet{
+public class Yorkie extends Dog{
 
 	private int petCount;
 
@@ -15,22 +15,4 @@ public class Yorkie extends Pet{
         if(petCount >= 10) return true;
         return false;
     }
-
-	public boolean isHappy(){
-		if (this.hasBeenWalked() && this.hasBeenFed() && this.hasBeenPetted()){
-			return true;
-		}
-		else{
-			return false;
-		}
-	}
-
-	public String talk(){
-		if (isHappy()){
-			return "MEOW";
-		}
-		else{
-			return "HISS";
-		}
-	}
 }
