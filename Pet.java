@@ -20,11 +20,12 @@ public class Pet{
 		this.petted = true;
     }
     public void ride(){
-        
+        this.ridden = true;
     }
     public void brush(){
-        
+        this.brushed = true;
     }
+
     
 
 	public boolean hasBeenPetted(){
@@ -37,10 +38,10 @@ public class Pet{
         return fed;
     }
     public boolean hasBeenRidden(){
-        return true;
+        return ridden;
     }
     public boolean hasBeenBrushed(){
-        return true;
+        return brushed;
     }
     
     public boolean isHappy(){

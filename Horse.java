@@ -19,10 +19,4 @@ public class Horse extends Pet{
     public void brush(){
         this.brushed = true;
     }
-    public boolean hasBeenRidden(){
-        return ridden;
-    }
-    public boolean hasBeenBrushed(){
-        return brushed;
-    }
 }

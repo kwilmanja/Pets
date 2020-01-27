@@ -30,10 +30,10 @@ public class PetOwner{
 		pets[x].feed();
 	}
 	public void brushPet(int x){
-		pets[x].brush();
+		if(pets[x] instanceof Horse) pets[x].brush();
 	}
 	public void ridePet(int x){
-		pets[x].ride();
+		if(pets[x] instanceof Horse) pets[x].ride();
 	}
 	
 	
