@@ -6,7 +6,7 @@ public class Horse extends Pet{
 
 
     public boolean isHappy(){
-        if(this.hasBeenBrushed() && this.hasBeenRidden() && this.hasBeenFed() && hasBeenWalked()){
+        if(this.hasBeenBrushed() && this.hasBeenRidden() && this.hasBeenFed() && hasBeenWalked() && hasBeenPetted()){
             return true;
         } else{
             return false;

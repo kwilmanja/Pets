@@ -29,12 +29,19 @@ public class PetOwner{
 	public void feedPet(int x){
 		pets[x].feed();
 	}
+	public void brushPet(int x){
+		pets[x].brush();
+	}
+	public void ridePet(int x){
+		pets[x].ride();
+	}
 	public boolean getPetHappyness(int x){
 		return pets[x].isHappy();
 	}
 	public String talk(int x){
 		return pets[x].talk();
 	}
+	
 
 
 
