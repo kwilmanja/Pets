@@ -3,7 +3,7 @@ public class Tester{
 
 		Pet[] pets = new Pet[2];
 		Dog billy = new Dog("billy");
-		Cat john = new Cat("john");
+		Horse john = new Horse("john");
 		pets[0] = billy;
 		pets[1] = john;
 
@@ -17,6 +17,10 @@ public class Tester{
 		System.out.println(fred.getPetHappyness(0));
 		System.out.println(fred.getHappyness());
 		System.out.println(fred.talk(0));
+
+		
+
+		
 
 		// fred.feedCat();
 		// fred.feedDog();
